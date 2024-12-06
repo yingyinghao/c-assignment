@@ -1,0 +1,99 @@
+1.What type would you choose for the following "numbers"?
+
+A person's telephone number: string
+A person's height: float - double
+A person's age: Int
+A person's gender(Male, Female, Prefer not to answer):enum
+A person's salary:decimal
+A book's ISBN:string
+A book's price: decimal
+A book's shipping weight: float -double
+A country's population:long
+The number of stars in the universe:ulong
+The number of employees in each of the small or medium business in the United Kingdom(up to 
+50,000 employees per business): ushort
+
+
+2.What are the difference between value type and reference type variables? What is boxing and unboxing?
+
+
+3. What is meant by the terms managed resource and unmanaged resource in .NET?
+
+
+What's the purpose of Garbage Collector in .NET?
+
+
+
+Controlling Flow and Converting Types
+1. What happens when you divide an int variable by 0?
+System.DivideByZeroException
+
+2. What happens when you divide a double variable by 0?
+positive double / 0 -> Infinity
+negative double / 0 -> -Infinity
+0.0 /0.0 ->Nan(not a number)
+
+3.What happens when you overflow an int variable, that is, set it to a value beyond its range?
+
+
+4.What is the difference between x=y++, and x=++y?
+x=y++: assigns the value of y to x first, then increments y.
+x=++y: increments y first, then assigns the new value to x.
+
+5.What is the difference between break, continue, and return when used inside a loop stament?
+break: Exits the loop entirely
+continue: Skips the rest of the current iteration and moves to the next iteration.
+return: Exits the loop and the entire method.
+
+6.What are the three parts of a for statment and whch of them are required?
+three parts: Initialization, Condition, Iteration
+none are strictly required, but at least the condition must evaluate to true for the loop to execute.
+
+7.What is the difference between the = and == operators?
+=: Assignmen operator; assigns a value to a variable.
+==: Equality operator; check if two values are equal.
+
+8.Does the folowing statment compile? for(;true;);
+Yes, it compiles. The condition(true) is valid, creating a infinite loop.
+
+9.What does the underscore_ represent in a switch expression?
+It represents the default case( a wildcard match)
+
+
+10.What interface must an object implement be enumerated over by using the foreach statment?
+The object must implement the IEnumerable interface(or IEnumerable<T>  for generics).
+
+
+02 Arrays and Strings
+
+1.When to use String vs. StringBuilder in C#?
+String: use when the string content is not expected to change frequently, string in C# are immutable, every modification creates a new string,
+resulting in more memory and processing overhead.
+StringBuilder:
+Use when you expect to perform multiple string maipulations, more efficient for frequent modifications because it operates on a mutable buffer.
+ 
+2.What is the base class for all arrays in C#?
+System.Array
+All arrays in C# derive from the System.Array class, which 
+
+
+3.How do you sort an array in C#?
+Array.Sort()
+
+4.What property of an array object can be used to get the total number of elements in an array?
+int [] = numbers = {1,2,3,4}
+int TotalElement = numbers.Length;
+
+5.Can you store multiple data types in System.Array?
+Yes, but only if you define the array as an array of object.
+
+
+6.What's the difference between the System.Array.CopyTo() and System.Array.Clone()?
+
+Array.CopyTo(): Copies the elements of the array into an existing array starting at a specified index.
+
+Array.Clone(): Creates a shallow copy of the array, returning a new array of the same type and size with the same elements.
+
+
+
+
